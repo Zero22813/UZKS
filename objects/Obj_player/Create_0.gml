@@ -6,4 +6,10 @@ hp = 3
 in_dmg = false
 weapon = "rifle"
 
+rifAmmo = 60
+gunAmmo = 14
+
+rifInLoad = 30
+gunInLoad = 7
+
 keys = []
