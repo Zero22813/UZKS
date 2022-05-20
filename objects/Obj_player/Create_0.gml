@@ -5,6 +5,7 @@ mspd = 5
 hp = 3
 in_dmg = false
 weapon = "rifle"
+atkspd = 10
 
 rifAmmo = 60
 gunAmmo = 14

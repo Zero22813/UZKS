@@ -1,9 +1,10 @@
 {
   "resources": [
     {"id":{"name":"Spr_heart_32","path":"sprites/Spr_heart_32/Spr_heart_32.yy",},"order":3,},
+    {"id":{"name":"Spr_ammo","path":"sprites/Spr_ammo/Spr_ammo.yy",},"order":18,},
     {"id":{"name":"Spr_tile_floor","path":"sprites/Spr_tile_floor/Spr_tile_floor.yy",},"order":1,},
     {"id":{"name":"ico_gun_64","path":"sprites/ico_gun_64/ico_gun_64.yy",},"order":1,},
-    {"id":{"name":"Obj_loot","path":"objects/Obj_loot/Obj_loot.yy",},"order":9,},
+    {"id":{"name":"Obj_ammo","path":"objects/Obj_ammo/Obj_ammo.yy",},"order":9,},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"order":1,},
     {"id":{"name":"Spr_cursor_en","path":"sprites/Spr_cursor_en/Spr_cursor_en.yy",},"order":1,},
     {"id":{"name":"Spr_loot","path":"sprites/Spr_loot/Spr_loot.yy",},"order":15,},
@@ -16,6 +17,7 @@
     {"id":{"name":"Spr_hdoor","path":"sprites/Spr_hdoor/Spr_hdoor.yy",},"order":0,},
     {"id":{"name":"Spr_cursor","path":"sprites/Spr_cursor/Spr_cursor.yy",},"order":0,},
     {"id":{"name":"ico_mask_64","path":"sprites/ico_mask_64/ico_mask_64.yy",},"order":0,},
+    {"id":{"name":"ico_rifle_64","path":"sprites/ico_rifle_64/ico_rifle_64.yy",},"order":2,},
     {"id":{"name":"Spr_hdoor_open","path":"sprites/Spr_hdoor_open/Spr_hdoor_open.yy",},"order":2,},
     {"id":{"name":"Tile_outside","path":"tilesets/Tile_outside/Tile_outside.yy",},"order":2,},
     {"id":{"name":"Spr_tile_ground1","path":"sprites/Spr_tile_ground1/Spr_tile_ground1.yy",},"order":2,},
