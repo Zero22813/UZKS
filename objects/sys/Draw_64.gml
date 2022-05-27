@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//hp
 if instance_exists(Obj_player){
 	for ( i = 1; i <= Obj_player.hp ; i+=1 ){
 		draw_sprite(Spr_heart_32, 0 , 40 * i, 20);

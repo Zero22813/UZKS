@@ -4,7 +4,7 @@
     "path": "folders/Notes.yy",
   },
   "resourceVersion": "1.1",
-  "name": "Note1",
+  "name": "Optimization",
   "tags": [],
   "resourceType": "GMNotes",
 }

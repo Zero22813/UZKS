@@ -50,7 +50,7 @@
     "spriteId": {"name":"Spr_bulletbox_red_anim","path":"sprites/Spr_bulletbox_red_anim/Spr_bulletbox_red_anim.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 8.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

@@ -4,6 +4,8 @@
 mspd = 5
 hp = 3
 in_dmg = false
+in_menu = false
+
 weapon = "rifle"
 atkspd = 10
 

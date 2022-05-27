@@ -24,17 +24,19 @@ if y > room_height { y = room_height }
 
 //------------Стрельба------------
 
-if keyboard_check(ord(1)){ weapon = "rifle" }
-else if keyboard_check(ord(2)){ weapon = "gun" }
+if !in_menu{
+	if keyboard_check(ord(1)){ weapon = "rifle" }
+	else if keyboard_check(ord(2)){ weapon = "gun" }
 
-if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkspd >= 7){
-	instance_create_depth(x, y, -1000, Obj_bullet)
-	rifInLoad -= 1
-	atkspd = 0
-}
-else if ( weapon = "gun" && mouse_check_button_released(mb_left) && gunInLoad > 0){
-	instance_create_depth(x, y, -1000, Obj_bullet)
-	gunInLoad -= 1
+	if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkspd >= 7){
+		instance_create_depth(x, y, -1000, Obj_bullet)
+		rifInLoad -= 1
+		atkspd = 0
+	}
+	else if ( weapon = "gun" && mouse_check_button_released(mb_left) && gunInLoad > 0){
+		instance_create_depth(x, y, -1000, Obj_bullet)
+		gunInLoad -= 1
+	}
 }
 
 
@@ -65,6 +67,17 @@ if keyboard_check_released(ord("R")){
 	}
 }
 
+//------------Окно навыков------------
+if keyboard_check_released( ord("C") ){
+	if !in_menu{
+		in_menu = true
+		Swin = instance_create_depth(0, 0, 0, Skill_window)
+	}
+	else{
+		in_menu = false
+		instance_destroy(Swin)
+	}
+}
 
 //------------trash------------
 atkspd += 1

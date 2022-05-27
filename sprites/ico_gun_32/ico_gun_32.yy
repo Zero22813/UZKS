@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ico_32",
-    "path": "folders/Sprites/UI/ico_32.yy",
+    "name": "weapon",
+    "path": "folders/Sprites/UI/ico_32/weapon.yy",
   },
   "resourceVersion": "1.0",
   "name": "ico_gun_32",
