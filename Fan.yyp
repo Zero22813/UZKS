@@ -37,6 +37,7 @@
     {"id":{"name":"Spr_heart","path":"sprites/Spr_heart/Spr_heart.yy",},"order":2,},
     {"id":{"name":"Spr_bulletbox_black","path":"sprites/Spr_bulletbox_black/Spr_bulletbox_black.yy",},"order":0,},
     {"id":{"name":"Obj_wall","path":"objects/Obj_wall/Obj_wall.yy",},"order":0,},
+    {"id":{"name":"Spr_skill_window","path":"sprites/Spr_skill_window/Spr_skill_window.yy",},"order":20,},
     {"id":{"name":"Obj_door","path":"objects/Obj_door/Obj_door.yy",},"order":6,},
     {"id":{"name":"Obj_bullet","path":"objects/Obj_bullet/Obj_bullet.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_orange","path":"sprites/Spr_bulletbox_orange/Spr_bulletbox_orange.yy",},"order":1,},
@@ -54,7 +55,7 @@
     {"id":{"name":"Tile_floor","path":"tilesets/Tile_floor/Tile_floor.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_yellow","path":"sprites/Spr_bulletbox_yellow/Spr_bulletbox_yellow.yy",},"order":4,},
     {"id":{"name":"skills","path":"scripts/skills/skills.yy",},"order":2,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -68,7 +69,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -107,7 +108,9 @@
   "TextureGroups": [
     {"isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":3035461389054378222,"filePath":"datafiles","resourceVersion":"1.0","name":"skills.txt","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2022.5.0.8",
   },

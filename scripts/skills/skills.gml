@@ -11,6 +11,7 @@ function useskill(skillid){
 */
 
 function getskillfromid(skillid){
+	other.skillid = skillid
 	name = global.skills[skillid][0]
 	desc = global.skills[skillid][1]
 	sprite_index = global.skills[skillid][2]

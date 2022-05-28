@@ -3,8 +3,13 @@
 
 
 btns = []
+depth = -1
 
 for ( i = 0; i < 3; i++ ){
-	array_push(btns, instance_create_depth(100 + 100*i, 100, 0, Skill_btn ))
-	with(btns[i]) { getskillfromid(other.i) }
+	array_push(btns, instance_create_depth(200 + 100*i, 300, -2, Skill_btn ))
+	with(btns[i]) {
+		getskillfromid(other.i)
+		xdif = 100 + 100 * other.i
+		ydif = 100
+	}
 }

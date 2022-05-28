@@ -1,11 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = -3
 global.score = 0
+
 global.sp = 0
 global.xp = 0
 global.maxxp = 100
 
+// Навыки
 global.skills = [
 	[ //skill1
 		"skill1", //name-0

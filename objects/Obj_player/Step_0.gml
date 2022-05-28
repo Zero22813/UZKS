@@ -71,7 +71,7 @@ if keyboard_check_released(ord("R")){
 if keyboard_check_released( ord("C") ){
 	if !in_menu{
 		in_menu = true
-		Swin = instance_create_depth(0, 0, 0, Skill_window)
+		Swin = instance_create_depth(0, 0, -1, Skill_window)
 	}
 	else{
 		in_menu = false
