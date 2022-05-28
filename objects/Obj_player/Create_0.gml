@@ -6,6 +6,8 @@ hp = 3
 in_dmg = false
 in_menu = false
 
+skillid = [-1, -1]
+
 weapon = "rifle"
 atkspd = 10
 

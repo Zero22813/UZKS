@@ -79,5 +79,13 @@ if keyboard_check_released( ord("C") ){
 	}
 }
 
+//------------Применение навыков------------
+if keyboard_check_released( ord("Q") ) && skillid[0] >= 0{
+	useskill(skillid[0])
+}
+if keyboard_check_released( ord("E") ) && skillid[1] >= 0{
+	useskill(skillid[0])
+}
+
 //------------trash------------
 atkspd += 1

@@ -3,6 +3,8 @@
 xdif = 0
 ydif = 0
 
+active = false
+
 skillid = 0
 name = ""
 desc = ""
