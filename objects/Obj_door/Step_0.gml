@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if distance_to_object(Obj_player) <= 32{
+if distance_to_object(Obj_player) <= 50{
 	
-	if keyboard_check_released(ord("E")){
+	if keyboard_check_released(ord("F")){
 		
 		if status = "close"{
 			for (i=0; i < array_length(Obj_player.keys); i+=1){

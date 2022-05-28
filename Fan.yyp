@@ -51,12 +51,13 @@
     {"id":{"name":"Spr_player_damaged","path":"sprites/Spr_player_damaged/Spr_player_damaged.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_green","path":"sprites/Spr_bulletbox_green/Spr_bulletbox_green.yy",},"order":2,},
     {"id":{"name":"Spr_bulletbox_blue_anim","path":"sprites/Spr_bulletbox_blue_anim/Spr_bulletbox_blue_anim.yy",},"order":8,},
+    {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},"order":1,},
     {"id":{"name":"Spr_player","path":"sprites/Spr_player/Spr_player.yy",},"order":0,},
     {"id":{"name":"Spr_tile_groung0","path":"sprites/Spr_tile_groung0/Spr_tile_groung0.yy",},"order":0,},
     {"id":{"name":"Tile_floor","path":"tilesets/Tile_floor/Tile_floor.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_yellow","path":"sprites/Spr_bulletbox_yellow/Spr_bulletbox_yellow.yy",},"order":4,},
+    {"id":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},"order":2,},
     {"id":{"name":"skills","path":"scripts/skills/skills.yy",},"order":2,},
-    {"id":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -71,6 +72,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},},
+    {"roomId":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
