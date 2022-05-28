@@ -2,5 +2,4 @@
 // You can write your code in this editor
 
 draw_self()
-draw_set_color(#CC0605)
-draw_text(x-10, y-54, hp)
+draw_healthbar(x - 32, y - 39, x + 32, y - 49, (hp/maxhp*100), c_black, c_red, c_green, 0, true, true)

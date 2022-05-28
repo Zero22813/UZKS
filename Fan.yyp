@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"Obj_grenade","path":"objects/Obj_grenade/Obj_grenade.yy",},"order":3,},
     {"id":{"name":"Spr_bulletbox_red","path":"sprites/Spr_bulletbox_red/Spr_bulletbox_red.yy",},"order":6,},
     {"id":{"name":"Spr_skill3","path":"sprites/Spr_skill3/Spr_skill3.yy",},"order":2,},
     {"id":{"name":"Spr_heart_32","path":"sprites/Spr_heart_32/Spr_heart_32.yy",},"order":3,},
@@ -14,7 +15,9 @@
     {"id":{"name":"Obj_ammo","path":"objects/Obj_ammo/Obj_ammo.yy",},"order":0,},
     {"id":{"name":"todo list","path":"notes/todo list/todo list.yy",},"order":1,},
     {"id":{"name":"Obj_player","path":"objects/Obj_player/Obj_player.yy",},"order":1,},
+    {"id":{"name":"Spr_grenade","path":"sprites/Spr_grenade/Spr_grenade.yy",},"order":4,},
     {"id":{"name":"Spr_cursor_en","path":"sprites/Spr_cursor_en/Spr_cursor_en.yy",},"order":1,},
+    {"id":{"name":"Obj_explosion","path":"objects/Obj_explosion/Obj_explosion.yy",},"order":4,},
     {"id":{"name":"Spr_loot","path":"sprites/Spr_loot/Spr_loot.yy",},"order":2,},
     {"id":{"name":"Obj_enemy","path":"objects/Obj_enemy/Obj_enemy.yy",},"order":3,},
     {"id":{"name":"Spawner","path":"objects/Spawner/Spawner.yy",},"order":5,},
@@ -29,6 +32,7 @@
     {"id":{"name":"Spr_cursor","path":"sprites/Spr_cursor/Spr_cursor.yy",},"order":0,},
     {"id":{"name":"ico_mask_64","path":"sprites/ico_mask_64/ico_mask_64.yy",},"order":0,},
     {"id":{"name":"ico_rifle_64","path":"sprites/ico_rifle_64/ico_rifle_64.yy",},"order":1,},
+    {"id":{"name":"Spr_explosion","path":"sprites/Spr_explosion/Spr_explosion.yy",},"order":5,},
     {"id":{"name":"Spr_hdoor_open","path":"sprites/Spr_hdoor_open/Spr_hdoor_open.yy",},"order":2,},
     {"id":{"name":"Spr_bulletbox_red_anim","path":"sprites/Spr_bulletbox_red_anim/Spr_bulletbox_red_anim.yy",},"order":5,},
     {"id":{"name":"Tile_outside","path":"tilesets/Tile_outside/Tile_outside.yy",},"order":2,},
@@ -53,7 +57,6 @@
     {"id":{"name":"Spr_bulletbox_blue_anim","path":"sprites/Spr_bulletbox_blue_anim/Spr_bulletbox_blue_anim.yy",},"order":8,},
     {"id":{"name":"GameRoom","path":"rooms/GameRoom/GameRoom.yy",},"order":1,},
     {"id":{"name":"Spr_player","path":"sprites/Spr_player/Spr_player.yy",},"order":0,},
-    {"id":{"name":"Spr_tile_groung0","path":"sprites/Spr_tile_groung0/Spr_tile_groung0.yy",},"order":0,},
     {"id":{"name":"Tile_floor","path":"tilesets/Tile_floor/Tile_floor.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_yellow","path":"sprites/Spr_bulletbox_yellow/Spr_bulletbox_yellow.yy",},"order":4,},
     {"id":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},"order":2,},

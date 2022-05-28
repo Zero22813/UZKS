@@ -16,10 +16,10 @@ else {
 x += hspd * hcol
 y += vspd * vcol
 
-if x < 0 { x = 0 }
-if y < 0 { y = 0 }
-if x > room_width { x = room_width }
-if y > room_height { y = room_height }
+if x < 32 { x = 32 }
+if y < 32 { y = 32 }
+if x > room_width - 32 { x = room_width - 32 }
+if y > room_height - 32 { y = room_height - 32 }
 
 
 //------------Стрельба------------
@@ -81,11 +81,19 @@ if keyboard_check_released( ord("C") ){
 
 //------------Применение навыков------------
 if keyboard_check_released( ord("Q") ) && skillid[0] >= 0{
-	useskill(skillid[0])
+	if !in_menu && cooldown[0] <= 0{
+		useskill(skillid[0])
+		cooldown[0] = global.skills[skillid[0]][5] * 60
+	}
 }
-if keyboard_check_released( ord("E") ) && skillid[1] >= 0{
-	useskill(skillid[0])
+if !in_menu && keyboard_check_released( ord("E") ) && skillid[1] >= 0{
+	if cooldown[1] <= 0{
+		useskill(skillid[1])
+		cooldown[1] = global.skills[skillid[1]][5] * 60
+	}
 }
 
 //------------trash------------
 atkspd += 1
+cooldown[0] -= 1
+cooldown[1] -= 1

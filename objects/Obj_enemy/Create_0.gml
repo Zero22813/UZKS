@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-hp = irandom_range(10, 30)
+maxhp = irandom_range(10, 30)
+hp = maxhp
+spd = 3
 spawn = instance_nearest(x,y, Spawner)

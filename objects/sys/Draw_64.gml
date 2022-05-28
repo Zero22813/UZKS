@@ -8,19 +8,12 @@ if instance_exists(Obj_player){
 	}
 }
 
-draw_set_color(#CC0605)
-draw_rectangle(40, 60, 170, 125, false)
-draw_set_color(#CC06AA)
-draw_text(40, 60, "fps: " + string(fps))
-draw_text(40, 75, "score: " + string(global.score))
-
-
+// Иконка оружия
 if instance_exists(Obj_player){
-	draw_set_color(#CC0605)
-	draw_rectangle(0, 768, 120, 710, false)
+	draw_set_color(#537072)
+	draw_rectangle(0, 768, 120, 700, false)
 	
-	draw_set_color(#CC06AA)
-	draw_text(40, 90, "weapon: " + string(Obj_player.weapon))
+	draw_set_color(#8E9B97)
 	switch Obj_player.weapon{
 		case "rifle":
 			draw_sprite(ico_rifle_64, 0, 30, 730)

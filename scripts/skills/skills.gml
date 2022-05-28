@@ -8,16 +8,21 @@ function useskill(skillid){
 			case 0:
 				instance_create_depth(x, y, -1000, Obj_bullet)
 				break
+			case 1:
+				instance_create_depth(x, y, -1000, Obj_grenade)
+				break
 		}
 	}
 }
 
 
 function getskillfromid(skillid){
-	other.skillid = skillid
+	self.skillid = skillid
 	name = global.skills[skillid][0]
 	desc = global.skills[skillid][1]
 	sprite_index = global.skills[skillid][2]
 	cost = global.skills[skillid][3]
 	status = global.skills[skillid][4]
+	cooldown = global.skills[skillid][5]
+	type = global.skills[skillid][6]
 }

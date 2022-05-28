@@ -7,7 +7,9 @@ in_dmg = false
 in_menu = false
 
 skillid = [-1, -1]
+cooldown = [0, 0]
 
+dmg = 5
 weapon = "rifle"
 atkspd = 10
 
