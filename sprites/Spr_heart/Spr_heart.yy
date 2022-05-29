@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "player",
-    "path": "folders/Sprites/player.yy",
+    "name": "ico_16",
+    "path": "folders/Sprites/UI/ico_16.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_heart",

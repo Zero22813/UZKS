@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "bullets",
-    "path": "folders/Sprites/misc/bullets.yy",
+    "path": "folders/Sprites/UI/ico_24/bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_bulletbox_green",

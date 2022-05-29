@@ -29,12 +29,12 @@ if !in_menu{
 	else if keyboard_check(ord(2)){ weapon = "gun" }
 
 	if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkspd >= 7){
-		instance_create_depth(x, y, -1000, Obj_bullet)
+		instance_create_depth(x, y, -1000, blts[curblt])
 		rifInLoad -= 1
 		atkspd = 0
 	}
 	else if ( weapon = "gun" && mouse_check_button_released(mb_left) && gunInLoad > 0){
-		instance_create_depth(x, y, -1000, Obj_bullet)
+		instance_create_depth(x, y, -1000, blts[curblt])
 		gunInLoad -= 1
 	}
 }
@@ -67,6 +67,12 @@ if keyboard_check_released(ord("R")){
 	}
 }
 
+//------------Сменя вида пуль------------
+if keyboard_check_released( ord("Q") ){
+	if curblt < 6{ curblt += 1 }
+	else { curblt = 0 }
+}
+
 //------------Окно навыков------------
 if keyboard_check_released( ord("C") ){
 	if !in_menu{
@@ -80,20 +86,22 @@ if keyboard_check_released( ord("C") ){
 }
 
 //------------Применение навыков------------
-if keyboard_check_released( ord("Q") ) && skillid[0] >= 0{
-	if !in_menu && cooldown[0] <= 0{
-		useskill(skillid[0])
-		cooldown[0] = global.skills[skillid[0]][5] * 60
+if keyboard_check_released( ord("F") ) && skillid[0] >= 0{
+	if !in_menu && cooldown <= 0{
+		useskill(skillid)
+		cooldown = global.skills[skillid[0]][5] * 60
 	}
 }
+/*
+Несколько скиллов через массивы (бинды соображать неохота)
 if !in_menu && keyboard_check_released( ord("E") ) && skillid[1] >= 0{
 	if cooldown[1] <= 0{
 		useskill(skillid[1])
 		cooldown[1] = global.skills[skillid[1]][5] * 60
 	}
 }
+*/
 
 //------------trash------------
 atkspd += 1
-cooldown[0] -= 1
-cooldown[1] -= 1
+cooldown -= 1

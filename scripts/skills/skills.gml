@@ -6,7 +6,7 @@ function useskill(skillid){
 		switch(skillid){
 			// номер скилла: действие скилла
 			case 0:
-				instance_create_depth(x, y, -1000, Obj_bullet)
+				instance_create_depth(x, y, -1000, Obj_bullet_black)
 				break
 			case 1:
 				instance_create_depth(x, y, -1000, Obj_grenade)

@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "system",
+    "path": "folders/Objects/system.yy",
   },
   "resourceVersion": "1.0",
   "name": "Skill_btn",

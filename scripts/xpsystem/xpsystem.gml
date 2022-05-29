@@ -14,6 +14,7 @@ function learnskill(skillid){
 		global.skills[skillid][4] = true
 		if !global.skills[skillid][6]{
 			switch(skillid){
+				// Пассивки id-действие
 				case 2:
 					Obj_player.dmg += 15
 					break

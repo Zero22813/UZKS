@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_bullet",
-    "path": "sprites/Spr_bullet/Spr_bullet.yy",
+    "name": "Spr_bullet_blue",
+    "path": "sprites/Spr_bullet_blue/Spr_bullet_blue.yy",
   },
   "solid": false,
   "visible": true,
@@ -34,7 +34,7 @@
     "path": "folders/Objects/misc.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Obj_bullet",
+  "name": "Obj_bullet_blue",
   "tags": [],
   "resourceType": "GMObject",
 }

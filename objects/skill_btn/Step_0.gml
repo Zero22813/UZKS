@@ -3,7 +3,7 @@
 
 if active{
 	if keyboard_check_released( ord("Q") ){
-		Obj_player.skillid[0] = skillid
+		
 		active = false
 	}
 	if keyboard_check_released( ord("E") ){
