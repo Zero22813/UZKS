@@ -13,3 +13,4 @@ cost = 0
 status = false
 cooldown = 0
 type = false
+encost = 0

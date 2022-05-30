@@ -86,10 +86,14 @@ if keyboard_check_released( ord("C") ){
 }
 
 //------------Применение навыков------------
-if keyboard_check_released( ord("F") ) && skillid[0] >= 0{
-	if !in_menu && cooldown <= 0{
-		useskill(skillid)
-		cooldown = global.skills[skillid[0]][5] * 60
+if keyboard_check_released( ord("F") ) && skillid >= 0{
+	if !in_menu{
+		
+		if cooldown <= 0 && energy >= global.skills[skillid][7]{
+			useskill(skillid)
+			cooldown = global.skills[skillid][5] * 60
+		}
+		
 	}
 }
 /*
