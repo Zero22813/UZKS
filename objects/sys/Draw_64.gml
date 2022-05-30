@@ -6,19 +6,19 @@ if instance_exists(Obj_player){
 	var mhp = Obj_player.maxhp
 	var hp = Obj_player.hp
 	
-	draw_healthbar(50, 50, 200, 70, ( hp / mhp * 100 ), c_black, c_red, c_red, 0, true, true)
+	draw_healthbar(50, 50, 50 + 3 * mhp, 70, ( hp / mhp * 100 ), c_black, c_red, c_red, 0, true, true)
 	
 	// Броня
 	var ma = Obj_player.maxarmor
 	var a = Obj_player.armor
 	
-	draw_healthbar(50, 80, 200, 100, ( a / ma * 100 ), c_black, c_blue, c_blue, 0, true, true)
+	draw_healthbar(50, 80, 50 + 3 * ma, 100, ( a / ma * 100 ), c_black, c_blue, c_blue, 0, true, true)
 	
 	// Энергия
 	var me = Obj_player.maxenergy
 	var e = Obj_player.energy
 	
-	draw_healthbar(50, 110, 200, 130, ( e / me * 100 ), c_black, c_green, c_green, 0, true, true)
+	draw_healthbar(50, 110, 50 + 3 * me, 130, ( e / me * 100 ), c_black, c_green, c_green, 0, true, true)
 	
 }
 

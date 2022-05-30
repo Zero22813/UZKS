@@ -3,13 +3,13 @@
 
 mspd = 5
 maxhp = 50
-hp = maxhp
+hp = 20//maxhp
 
 maxarmor = 50
 armor = maxarmor
 
 maxenergy = 50
-energy = maxenergy
+energy = 0//maxenergy
 
 in_dmg = false
 in_menu = false
@@ -19,8 +19,13 @@ cooldown = 0
 
 dmg = 5
 exdmg = 100
+lifesteal = 0
+
 weapon = "rifle"
-atkspd = 10
+
+atkspd = 7
+atkcount = 7
+
 blts = [
 Obj_bullet_black,
 Obj_bullet_blue,
@@ -39,3 +44,5 @@ rifInLoad = 30
 gunInLoad = 7
 
 keys = []
+
+alarm[0] = 120

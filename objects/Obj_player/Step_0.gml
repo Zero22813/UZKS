@@ -28,10 +28,10 @@ if !in_menu{
 	if keyboard_check(ord(1)){ weapon = "rifle" }
 	else if keyboard_check(ord(2)){ weapon = "gun" }
 
-	if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkspd >= 7){
+	if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkcount >= atkspd){
 		instance_create_depth(x, y, -1000, blts[curblt])
 		rifInLoad -= 1
-		atkspd = 0
+		atkcount = 0
 	}
 	else if ( weapon = "gun" && mouse_check_button_released(mb_left) && gunInLoad > 0){
 		instance_create_depth(x, y, -1000, blts[curblt])
@@ -86,6 +86,7 @@ if keyboard_check_released( ord("C") ){
 }
 
 //------------Применение навыков------------
+/*
 if keyboard_check_released( ord("F") ) && skillid >= 0{
 	if !in_menu{
 		
@@ -96,6 +97,7 @@ if keyboard_check_released( ord("F") ) && skillid >= 0{
 		
 	}
 }
+*/
 /*
 Несколько скиллов через массивы (бинды соображать неохота)
 if !in_menu && keyboard_check_released( ord("E") ) && skillid[1] >= 0{
@@ -106,6 +108,13 @@ if !in_menu && keyboard_check_released( ord("E") ) && skillid[1] >= 0{
 }
 */
 
+if alarm[0] == 0{
+	alarm[0] = 120
+}
+
 //------------trash------------
-atkspd += 1
+atkcount += 1
 cooldown -= 1
+if hp > maxhp { hp = maxhp }
+if armor > maxarmor { armor = maxarmor }
+if energy > maxenergy { energy = maxenergy }

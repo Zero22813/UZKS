@@ -1,0 +1,3 @@
+/// @description 
+
+energy += 1
