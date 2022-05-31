@@ -3,13 +3,13 @@
 
 mspd = 5
 maxhp = 50
-hp = 20//maxhp
+hp = maxhp
 
 maxarmor = 50
 armor = maxarmor
 
 maxenergy = 50
-energy = 0//maxenergy
+energy = maxenergy
 
 in_dmg = false
 in_menu = false
@@ -43,6 +43,6 @@ gunAmmo = 14
 rifInLoad = 30
 gunInLoad = 7
 
-keys = []
+keys = [0]
 
 alarm[0] = 120

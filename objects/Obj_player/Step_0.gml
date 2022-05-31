@@ -5,12 +5,12 @@ vspd = ( keyboard_check(ord("S")) - keyboard_check(ord("W")) ) * mspd
 
 var door = instance_nearest(x, y, Obj_door)
 if door.status == "close"{
-	hcol = !place_meeting(x + hspd, y, Obj_wall) * !place_meeting(x + hspd, y, Obj_door)
-	vcol = !place_meeting(x, y + vspd, Obj_wall) * !place_meeting(x, y + vspd, Obj_door)
+	hcol = !place_meeting(x + hspd, y, Obj_wall) * !place_meeting(x + hspd, y, Obj_water) * !place_meeting(x + hspd, y, Obj_door)
+	vcol = !place_meeting(x, y + vspd, Obj_wall) * !place_meeting(x, y + vspd, Obj_water) * !place_meeting(x, y + vspd, Obj_door)
 }
 else {
-	hcol = !place_meeting(x + hspd, y, Obj_wall)
-	vcol = !place_meeting(x, y + vspd, Obj_wall)
+	hcol = !place_meeting(x + hspd, y, Obj_wall) * !place_meeting(x + hspd, y, Obj_water)
+	vcol = !place_meeting(x, y + vspd, Obj_wall) * !place_meeting(x, y + vspd, Obj_water)
 }
 
 x += hspd * hcol
