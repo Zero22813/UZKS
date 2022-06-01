@@ -57,10 +57,10 @@ if instance_exists(Obj_player){
 	
 	//Предметы
 	its = [
-		Spr_item1_24,
-		Spr_item2_24,
-		Spr_item3_24,
-		Spr_item3_24
+		ico_apteka_24,
+		ico_grenade_24,
+		ico_med_24,
+		ico_med2_24
 	]
 	
 	var curitem = Obj_player.curitem

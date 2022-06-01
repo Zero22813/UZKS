@@ -191,50 +191,50 @@ global.items = [
 	[//id-0
 		"Аптека", //name-0
 		"Восстанавливает здоровье.", //desc-1
-		Spr_skill1, //ico-2
+		ico_apteka_64, //ico-2
 		200, //cost-3
 		0 //qty-4
 	],
 	[//id-1
 		"Граната", //name-0
 		"Наносит большой\nвзрывной урон.", //desc-1
-		Spr_skill2, //ico-2
+		ico_grenade_64, //ico-2
 		250, //cost-3
 		0 //qty-4
 	],
 	[//id-2
 		"Морфий", //name-0
 		"Постепенно востанавливает\nздоровье.", //desc-1
-		Spr_skill3, //ico-2
+		ico_med_64, //ico-2
 		500, //cost-3
 		0 //qty-4
 	],
 	[//id-3
 		"Адреналин", //name-0
 		"Временно уменьшает\nполучаемый урон.", //desc-1
-		Spr_skill3, //ico-2
+		ico_med2_64, //ico-2
 		350, //cost-3
 		0 //qty-4
 	],
 	[//id-4
 		"Патроны для пистолета", //name-0
 		"Дополнительные патроны.", //desc-1
-		Spr_skill3, //ico-2
+		ico_ammo_64, //ico-2
 		100, //cost-3
 		0 //qty-4
 	],
 	[//id-5
 		"Патроны для автомата", //name-0
 		"Дополнительные патроны.", //desc-1
-		Spr_skill3, //ico-2
+		ico_ammo_64, //ico-2
 		250, //cost-3
 		0 //qty-4
 	],
 	[//id-6
 		"Ремонт брони", //name-0
 		".", //desc-1
-		Spr_skill3, //ico-2
-		00, //cost-3
+		ico_armor_64, //ico-2
+		500, //cost-3
 		0 //qty-4
 	],
 	
