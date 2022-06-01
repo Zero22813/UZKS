@@ -1,5 +1,7 @@
 /// @description 
 
+draw_set_font(f_ru)
+
 // Статы игрока
 if instance_exists(Obj_player){
 	// Здоровье
@@ -13,14 +15,6 @@ if instance_exists(Obj_player){
 	var a = Obj_player.armor
 	
 	draw_healthbar(50, 80, 50 + 3 * ma, 100, ( a / ma * 100 ), c_black, c_blue, c_blue, 0, true, true)
-	
-	// Энергия
-	/*
-	var me = Obj_player.maxenergy
-	var e = Obj_player.energy
-	
-	draw_healthbar(50, 110, 50 + 3 * me, 130, ( e / me * 100 ), c_black, c_green, c_green, 0, true, true)
-	*/
 }
 
 // Души
@@ -30,7 +24,7 @@ draw_text(1200, 700, global.souls)
 // Иконка оружия
 if instance_exists(Obj_player){
 	draw_set_color(#537072)
-	draw_rectangle(0, 768, 150, 700, false)
+	draw_rectangle(0, 768, 210, 700, false)
 	
 	blts = [
 	Spr_bulletbox_black,
@@ -41,17 +35,33 @@ if instance_exists(Obj_player){
 	Spr_bulletbox_red,
 	Spr_bulletbox_yellow
 	]
-	draw_sprite(blts[Obj_player.curblt], 0, 20, 730)
+	var curblt = Obj_player.curblt
+	
+	if curblt == 0{
+		draw_sprite(blts[6], 0, 20, 730)
+	}
+	else{
+		draw_sprite(blts[curblt-1], 0, 20, 730)
+	}
+	
+	draw_sprite(blts[curblt], 0, 50, 720)
+	
+	if curblt == 6{
+		draw_sprite(blts[0], 0, 80, 730)
+	}
+	else{
+		draw_sprite(blts[curblt+1], 0, 80, 730)
+	}
 	
 	draw_set_color(#8E9B97)
 	switch Obj_player.weapon{
 		case "rifle":
-			draw_sprite(ico_rifle_64, 0, 60, 730)
-			draw_text(90, 720, string(Obj_player.rifInLoad) + "|" + string(Obj_player.rifAmmo) )
+			draw_sprite(ico_rifle_64, 0, 130, 730)
+			draw_text(160, 720, string(Obj_player.rifInLoad) + "|" + string(Obj_player.rifAmmo) )
 			break
 		case "gun":
-			draw_sprite(ico_gun_64, 0, 60, 730)
-			draw_text(90, 720, string(Obj_player.gunInLoad) + "|" + string(Obj_player.gunAmmo) )
+			draw_sprite(ico_gun_64, 0, 130, 730)
+			draw_text(160, 720, string(Obj_player.gunInLoad) + "|" + string(Obj_player.gunAmmo) )
 			break
 	}
 }

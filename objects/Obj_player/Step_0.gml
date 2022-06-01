@@ -68,9 +68,13 @@ if keyboard_check_released(ord("R")){
 }
 
 //------------Сменя вида пуль------------
-if keyboard_check_released( ord("Q") ){
+if keyboard_check_released( ord("E") ){
 	if curblt < 6{ curblt += 1 }
 	else { curblt = 0 }
+}
+else if keyboard_check_released( ord("Q") ){
+	if curblt > 0{ curblt -= 1 }
+	else { curblt = 6 }
 }
 
 //------------Окно навыков------------
@@ -98,7 +102,7 @@ if keyboard_check_released( ord("I") ){
 }
 
 //------------Применение предметов------------
-if keyboard_check_released( ord("F") ) && global.items[curitem][4] > 0{
+if keyboard_check_released( ord("V") ) && global.items[curitem][4] > 0{
 	if !in_menu{
 		useitem(curitem)
 	}

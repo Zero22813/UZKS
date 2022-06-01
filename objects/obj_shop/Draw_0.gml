@@ -4,5 +4,5 @@
 draw_self()
 
 if distance_to_object(Obj_player) <= 50{
-	Draw_GUI_Button(x - 10, y - 50, "E")
+	Draw_GUI_Button(x - 10, y - 50, "F")
 }

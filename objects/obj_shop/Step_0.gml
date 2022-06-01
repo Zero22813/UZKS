@@ -3,7 +3,7 @@
 
 if distance_to_object(Obj_player) <= 50{
 	
-	if keyboard_check_released(ord("E")){
+	if keyboard_check_released(ord("F")){
 		
 		if !in_shop {
 			Obj_player.in_menu = true
