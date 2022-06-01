@@ -524,7 +524,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "f_ru",
+  "name": "f_ru_24",
   "tags": [],
   "resourceType": "GMFont",
 }

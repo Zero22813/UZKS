@@ -18,14 +18,15 @@ if instance_exists(Obj_player){
 }
 
 // Души
-draw_set_color(#f6ec27)
+draw_set_color(#2C1B31)
 draw_text(1200, 700, global.souls)
 
-// Иконка оружия
+// Оружие и предметы
 if instance_exists(Obj_player){
 	draw_set_color(#537072)
 	draw_rectangle(0, 768, 210, 670, false)
 	
+	// Патроны
 	blts = [
 	Spr_bulletbox_black,
 	Spr_bulletbox_blue,
@@ -35,10 +36,9 @@ if instance_exists(Obj_player){
 	Spr_bulletbox_red,
 	Spr_bulletbox_yellow
 	]
-	var curblt = Obj_player.curblt
-	var curitem = Obj_player.curitem
 	
-	// Патроны
+	var curblt = Obj_player.curblt
+	
 	if curblt == 0{
 		draw_sprite(blts[6], 0, 20, 700)
 	}
@@ -56,31 +56,40 @@ if instance_exists(Obj_player){
 	}
 	
 	//Предметы
+	its = [
+		Spr_item1_24,
+		Spr_item2_24,
+		Spr_item3_24,
+		Spr_item3_24
+	]
+	
+	var curitem = Obj_player.curitem
 	if curitem == 0{
-		draw_sprite(global.items[6][2], 0, 20, 730)
+		draw_sprite(its[3], 0, 20, 730)
 	}
 	else{
-		draw_sprite(global.items[curitem-1][2], 0, 20, 730)
+		draw_sprite(its[curitem-1], 0, 20, 730)
 	}
 	
-	draw_sprite(global.items[curitem][2], 0, 50, 720)
+	draw_sprite(its[curitem], 0, 50, 720)
 	
-	if curitem == 6{
-		draw_sprite(global.items[0][2], 0, 80, 730)
+	if curitem == 3{
+		draw_sprite(its[0], 0, 80, 730)
 	}
 	else{
-		draw_sprite(global.items[curitem+1][2], 0, 80, 730)
+		draw_sprite(its[curitem+1], 0, 80, 730)
 	}
 	
+	// Иконка оружия и кол-во патрон
 	draw_set_color(#8E9B97)
 	switch Obj_player.weapon{
 		case "rifle":
-			draw_sprite(ico_rifle_64, 0, 130, 730)
-			draw_text(160, 720, string(Obj_player.rifInLoad) + "|" + string(Obj_player.rifAmmo) )
+			draw_sprite(ico_rifle_64, 0, 130, 720)
+			draw_text(160, 710, string(Obj_player.rifInLoad) + "|" + string(Obj_player.rifAmmo) )
 			break
 		case "gun":
-			draw_sprite(ico_gun_64, 0, 130, 730)
-			draw_text(160, 720, string(Obj_player.gunInLoad) + "|" + string(Obj_player.gunAmmo) )
+			draw_sprite(ico_gun_64, 0, 130, 720)
+			draw_text(160, 710, string(Obj_player.gunInLoad) + "|" + string(Obj_player.gunAmmo) )
 			break
 	}
 }

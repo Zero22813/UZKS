@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.mico = Spr_cursor
 depth = -3
 
 global.souls = 0

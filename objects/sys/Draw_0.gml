@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/*
 if instance_exists(Obj_enemy_red){
 	en = instance_nearest(mouse_x, mouse_y, Obj_enemy_red)
 
@@ -10,3 +11,6 @@ if instance_exists(Obj_enemy_red){
 	 else { draw_sprite(Spr_cursor, -1, mouse_x, mouse_y) }
 }
 else { draw_sprite(Spr_cursor, -1, mouse_x, mouse_y) }
+*/
+
+draw_sprite(global.mico, -1, mouse_x, mouse_y)
