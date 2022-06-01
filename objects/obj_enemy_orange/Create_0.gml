@@ -6,4 +6,4 @@ hp = maxhp
 spd = 3
 dmg = 10
 spawn = 0
-xp = 80
+souls = 800

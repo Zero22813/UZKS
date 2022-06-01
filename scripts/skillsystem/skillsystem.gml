@@ -1,17 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function xpadd(xp){
-	global.xp += xp
-	if global.xp >= global.maxxp{
-		global.sp += 1
-		global.xp -= global.maxxp
-	}
+#region Начисление валюты
+function soulsadd(souls){
+	global.souls += souls
 }
 
+#endregion
+
+#region Получение навыка\предмета
 function learnskill(skillid){
-	if !global.skills[skillid][4] && global.sp >= global.skills[skillid][3]{
-		global.sp -= global.skills[skillid][3]
+	if !global.skills[skillid][4] && global.souls >= global.skills[skillid][3]{
+		global.souls -= global.skills[skillid][3]
 		global.skills[skillid][4] = true
 		if !global.skills[skillid][6]{
 			switch(skillid){
@@ -98,6 +98,16 @@ function learnskill(skillid){
 		}
 	}
 }
+
+function buyitem(itemid){
+	if global.souls >= global.items[itemid][3]{
+		global.souls -= global.items[itemid][3]
+		global.items[itemid][4] += 1
+	}
+}
+#endregion
+
+#region Использование навыка\предмета
 /*
 function useskill(skillid){
 	if global.skills[skillid][4]{
@@ -116,6 +126,22 @@ function useskill(skillid){
 }
 */
 
+function useitem(itemid){
+	if global.items[itemid][4] > 0{
+		switch(itemid){
+			case 0:
+				global.items[itemid][4] -= 1
+				Obj_player.hp += 40
+				break
+			case 1:
+				instance_create_depth(x, y, -1000, Obj_grenade)
+				break
+		}
+	}
+}
+#endregion
+
+#region Получение навыка\предмета по его ИД
 function getskillfromid(skillid){
 	self.skillid = skillid
 	name = global.skills[skillid][0]
@@ -123,6 +149,13 @@ function getskillfromid(skillid){
 	sprite_index = global.skills[skillid][2]
 	cost = global.skills[skillid][3]
 	status = global.skills[skillid][4]
-	cooldown = global.skills[skillid][5]
-	type = global.skills[skillid][6]
 }
+
+function getitemfromid(itemid){
+	self.itemid = itemid
+	name = global.items[itemid][0]
+	desc = global.items[itemid][1]
+	sprite_index = global.items[itemid][2]
+	cost = global.items[itemid][3]
+}
+#endregion

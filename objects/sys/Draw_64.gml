@@ -15,12 +15,17 @@ if instance_exists(Obj_player){
 	draw_healthbar(50, 80, 50 + 3 * ma, 100, ( a / ma * 100 ), c_black, c_blue, c_blue, 0, true, true)
 	
 	// Энергия
+	/*
 	var me = Obj_player.maxenergy
 	var e = Obj_player.energy
 	
 	draw_healthbar(50, 110, 50 + 3 * me, 130, ( e / me * 100 ), c_black, c_green, c_green, 0, true, true)
-	
+	*/
 }
+
+// Души
+draw_set_color(c_white)
+draw_text(1200, 700, global.souls)
 
 // Иконка оружия
 if instance_exists(Obj_player){

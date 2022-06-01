@@ -1,3 +1,3 @@
 /// @description 
 
-//armor += 1
+buyitem(itemid)

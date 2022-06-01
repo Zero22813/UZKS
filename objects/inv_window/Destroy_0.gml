@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-maxhp = irandom_range(40, 100)
-hp = maxhp
-spd = 3
-dmg = 5
-spawn = 0
-souls = 600
+for ( i = 0; i < array_length(btns); i++ ){
+	instance_destroy(btns[i])
+}

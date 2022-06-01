@@ -8,14 +8,8 @@ hp = maxhp
 maxarmor = 50
 armor = maxarmor
 
-maxenergy = 50
-energy = maxenergy
-
 in_dmg = false
 in_menu = false
-
-skillid = -1
-cooldown = 0
 
 dmg = 5
 exdmg = 100
@@ -36,6 +30,7 @@ Obj_bullet_red,
 Obj_bullet_yellow
 ]
 curblt = 0
+curitem = 0
 
 rifAmmo = 60
 gunAmmo = 14

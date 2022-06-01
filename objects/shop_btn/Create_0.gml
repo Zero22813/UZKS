@@ -3,7 +3,7 @@
 xdif = 0
 ydif = 0
 
-skillid = 0
+itemid = 0
 name = ""
 desc = ""
 sprite_index = Spr_skill1

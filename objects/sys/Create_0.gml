@@ -2,258 +2,218 @@
 // You can write your code in this editor
 
 depth = -3
-global.score = 0
 
-global.sp = 0
-global.xp = 0
-global.maxxp = 100
+global.souls = 0
 
 // Навыки
+#region skills
 global.skills = [
 	///////////////////////Скорострельность//////////////////////////////
 	[ //skill1 id-0
 		"Скорострельность", //name-0
 		"Повышает скорострельность\nстрелкового оружия.", //desc-1
 		spr_RF1, //ico-2
-		1, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		100, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-1
 		"Скорострельность+", //name-0
 		"Повышает скорострельность\nстрелкового оружия.", //desc-1
 		spr_RF2, //ico-2
-		5, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-2
 		"Скорострельность++", //name-0
 		"Повышает скорострельность\nстрелкового оружия.", //desc-1
 		spr_RF3, //ico-2
-		8, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		800, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-3
 		"Скорострельность+++", //name-0
 		"Повышает скорострельность\nстрелкового оружия.", //desc-1
 		spr_RF4, //ico-2
-		15, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	///////////////////////Железная воля//////////////////////////////
 	[ //skill1 id-4
 		"Железная воля", //name-0
 		"Увеличивает запас брони.", //desc-1
 		spr_Iron_Will1, //ico-2
-		1, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		100, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-5
 		"Железная воля+", //name-0
 		"Увеличивает запас брони.", //desc-1
 		spr_Iron_Will2, //ico-2
-		3, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		300, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-6
 		"Железная воля++", //name-0
 		"Увеличивает запас брони.", //desc-1
 		spr_Iron_Will3, //ico-2
-		5, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-7
 		"Железная воля+++", //name-0
 		"Увеличивает запас брони.", //desc-1
 		spr_Iron_Will4, //ico-2
-		10, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1000, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	///////////////////////Повышение здоровья//////////////////////////////
 	[ //skill1 id-8
 		"Повышение здоровья", //name-0
 		"Увеличивает запас здоровья.", //desc-1
 		spr_MH1, //ico-2
-		1, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		100, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-9
 		"Повышение здоровья+", //name-0
 		"Увеличивает запас здоровья.", //desc-1
 		spr_MH2, //ico-2
-		4, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		400, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-10
 		"Повышение здоровья++", //name-0
 		"Увеличивает запас здоровья.", //desc-1
 		spr_MH3, //ico-2
-		9, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		900, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-11
 		"Повышение здоровья+++", //name-0
 		"Увеличивает запас здоровья.", //desc-1
 		spr_MH4, //ico-2
-		14, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1400, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	///////////////////////Стрелок//////////////////////////////
 	[ //skill1 id-12
 		"Стрелок", //name-0
 		"Увеличивает урон\nстрелкового оружия.", //desc-1
 		spr_ST1, //ico-2
-		1, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		100, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-13
 		"Стрелок+", //name-0
 		"Увеличивает урон\nстрелкового оружия.", //desc-1
 		spr_ST2, //ico-2
-		2, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		200, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-14
 		"Стрелок++", //name-0
 		"Увеличивает урон\nстрелкового оружия.", //desc-1
 		spr_ST3, //ico-2
-		5, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-15
 		"Стрелок+++", //name-0
 		"Увеличивает урон\nстрелкового оружия.", //desc-1
 		spr_ST4, //ico-2
-		10, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1000, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	///////////////////////Подрывник//////////////////////////////
 	[ //skill1 id-16
 		"Подрывник", //name-0
 		"Увеличивает урон взрывчатки.", //desc-1
 		spr_DM1, //ico-2
-		5, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-17
 		"Подрывник+", //name-0
 		"Увеличивает урон взрывчатки.", //desc-1
 		spr_DM2, //ico-2
-		10, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1000, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-18
 		"Подрывник++", //name-0
 		"Увеличивает урон взрывчатки.", //desc-1
 		spr_DM3, //ico-2
-		15, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1500, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-19
 		"Подрывник+++", //name-0
 		"Увеличивает урон взрывчатки.", //desc-1
 		spr_DM4, //ico-2
-		20, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		2000, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	///////////////////////Вампиризм//////////////////////////////
 	[ //skill1 id-20
 		"Вампиризм", //name-0
 		"Похищает здоровье\nпротивника во время атаки.", //desc-1
 		spr_VP1, //ico-2
-		3, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		300, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-21
 		"Вампиризм+", //name-0
 		"Похищает здоровье\nпротивника во время атаки.", //desc-1
 		spr_VP2, //ico-2
-		7, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		700, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-22
 		"Вампиризм++", //name-0
 		"Похищает здоровье\nпротивника во время атаки.", //desc-1
 		spr_VP3, //ico-2
-		12, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		1200, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 	[ //skill1 id-23
 		"Вампиризм+++", //name-0
 		"Похищает здоровье\nпротивника во время атаки.", //desc-1
 		spr_VP4, //ico-2
-		20, //cost-3
-		false, //status-4 true-owned false-not owned
-		0, // cooldown-5 in sec
-		false, //type-6 true-active false-passive
-		0 // energy cost-7
+		2000, //cost-3
+		false //status-4 true-owned false-not owned
 	],
 ]
+#endregion
+
+#region items
+global.items = [
+	[//id-0
+		"Аптека", //name-0
+		"Восстанавливает здоровье.", //desc-1
+		Spr_skill1, //ico-2
+		200, //cost-3
+		0 //qty-4
+	],
+	[//id-1
+		"Граната", //name-0
+		"Наносит большой\nвзрывной урон.", //desc-1
+		Spr_skill2, //ico-2
+		250, //cost-3
+		0 //qty-4
+	],
+	[//id-2
+		"Морфий", //name-0
+		"Постепенно востанавливает\nздоровье.", //desc-1
+		Spr_skill3, //ico-2
+		500, //cost-3
+		0 //qty-4
+	],
+	[//id-3
+		"Адреналин", //name-0
+		"Временно уменьшает\nполучаемый урон.", //desc-1
+		Spr_skill3, //ico-2
+		350, //cost-3
+		0 //qty-4
+	],
+]
+#endregion

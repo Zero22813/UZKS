@@ -31,7 +31,7 @@
     "path": "folders/Objects/system.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Skill_btn",
+  "name": "Shop_btn",
   "tags": [],
   "resourceType": "GMObject",
 }

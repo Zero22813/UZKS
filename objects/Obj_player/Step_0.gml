@@ -77,36 +77,32 @@ if keyboard_check_released( ord("Q") ){
 if keyboard_check_released( ord("C") ){
 	if !in_menu{
 		in_menu = true
-		Swin = instance_create_depth(0, 0, -1, Skill_window)
+		Skwin = instance_create_depth(0, 0, -1, Skill_window)
 	}
 	else{
 		in_menu = false
-		instance_destroy(Swin)
+		instance_destroy(Skwin)
 	}
 }
 
-//------------Применение навыков------------
-/*
-if keyboard_check_released( ord("F") ) && skillid >= 0{
+//------------Окно инвентаря------------
+if keyboard_check_released( ord("I") ){
 	if !in_menu{
-		
-		if cooldown <= 0 && energy >= global.skills[skillid][7]{
-			useskill(skillid)
-			cooldown = global.skills[skillid][5] * 60
-		}
-		
+		in_menu = true
+		Iwin = instance_create_depth(0, 0, -1, Inv_window)
+	}
+	else{
+		in_menu = false
+		instance_destroy(Iwin)
 	}
 }
-*/
-/*
-Несколько скиллов через массивы (бинды соображать неохота)
-if !in_menu && keyboard_check_released( ord("E") ) && skillid[1] >= 0{
-	if cooldown[1] <= 0{
-		useskill(skillid[1])
-		cooldown[1] = global.skills[skillid[1]][5] * 60
+
+//------------Применение предметов------------
+if keyboard_check_released( ord("F") ) && global.items[curitem][4] > 0{
+	if !in_menu{
+		useitem(curitem)
 	}
 }
-*/
 
 if alarm[0] == 0{
 	alarm[0] = 120
@@ -114,7 +110,5 @@ if alarm[0] == 0{
 
 //------------trash------------
 atkcount += 1
-cooldown -= 1
 if hp > maxhp { hp = maxhp }
 if armor > maxarmor { armor = maxarmor }
-if energy > maxenergy { energy = maxenergy }
