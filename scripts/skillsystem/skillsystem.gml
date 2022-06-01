@@ -102,7 +102,21 @@ function learnskill(skillid){
 function buyitem(itemid){
 	if global.souls >= global.items[itemid][3]{
 		global.souls -= global.items[itemid][3]
-		global.items[itemid][4] += 1
+		switch(itemid){
+			default:
+				global.items[itemid][4] += 1
+				break
+			case 4:
+				Obj_player.gunAmmo += 7
+				break
+			case 5:
+				Obj_player.rifAmmo += 30
+				break
+			case 6:
+				Obj_player.armor = Obj_player.maxarmor
+				break
+		}
+		
 	}
 }
 #endregion
