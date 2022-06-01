@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_inv_window",
-    "path": "sprites/Spr_inv_window/Spr_inv_window.yy",
+    "name": "spr_skill_window",
+    "path": "sprites/spr_skill_window/spr_skill_window.yy",
   },
   "solid": false,
   "visible": true,

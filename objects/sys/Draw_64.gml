@@ -18,13 +18,13 @@ if instance_exists(Obj_player){
 }
 
 // Души
-draw_set_color(c_white)
+draw_set_color(#f6ec27)
 draw_text(1200, 700, global.souls)
 
 // Иконка оружия
 if instance_exists(Obj_player){
 	draw_set_color(#537072)
-	draw_rectangle(0, 768, 210, 700, false)
+	draw_rectangle(0, 768, 210, 670, false)
 	
 	blts = [
 	Spr_bulletbox_black,
@@ -36,21 +36,40 @@ if instance_exists(Obj_player){
 	Spr_bulletbox_yellow
 	]
 	var curblt = Obj_player.curblt
+	var curitem = Obj_player.curitem
 	
+	// Патроны
 	if curblt == 0{
-		draw_sprite(blts[6], 0, 20, 730)
+		draw_sprite(blts[6], 0, 20, 700)
 	}
 	else{
-		draw_sprite(blts[curblt-1], 0, 20, 730)
+		draw_sprite(blts[curblt-1], 0, 20, 700)
 	}
 	
-	draw_sprite(blts[curblt], 0, 50, 720)
+	draw_sprite(blts[curblt], 0, 50, 690)
 	
 	if curblt == 6{
-		draw_sprite(blts[0], 0, 80, 730)
+		draw_sprite(blts[0], 0, 80, 700)
 	}
 	else{
-		draw_sprite(blts[curblt+1], 0, 80, 730)
+		draw_sprite(blts[curblt+1], 0, 80, 700)
+	}
+	
+	//Предметы
+	if curitem == 0{
+		draw_sprite(global.items[6][2], 0, 20, 730)
+	}
+	else{
+		draw_sprite(global.items[curitem-1][2], 0, 20, 730)
+	}
+	
+	draw_sprite(global.items[curitem][2], 0, 50, 720)
+	
+	if curitem == 6{
+		draw_sprite(global.items[0][2], 0, 80, 730)
+	}
+	else{
+		draw_sprite(global.items[curitem+1][2], 0, 80, 730)
 	}
 	
 	draw_set_color(#8E9B97)

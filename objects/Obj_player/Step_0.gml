@@ -70,12 +70,12 @@ if keyboard_check_released(ord("R")){
 if keyboard_check( vk_shift ){
 //------------Сменя активного предмета------------
 	if keyboard_check_released( ord("E") ){
-		if curitem < 6 { curitem += 1 }
+		if curitem < 3 { curitem += 1 }
 		else { curitem = 0 }
 	}
 	else if keyboard_check_released( ord("Q") ){
 		if curitem > 0 { curitem -= 1 }
-		else { curitem = 6 }
+		else { curitem = 3 }
 	}
 }
 else{

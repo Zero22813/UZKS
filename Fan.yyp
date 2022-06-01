@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_shop_window","path":"sprites/spr_shop_window/spr_shop_window.yy",},"order":13,},
     {"id":{"name":"Obj_grenade","path":"objects/Obj_grenade/Obj_grenade.yy",},"order":3,},
     {"id":{"name":"spr_VP2","path":"sprites/spr_VP2/spr_VP2.yy",},"order":2,},
     {"id":{"name":"spr_Iron_Will2","path":"sprites/spr_Iron_Will2/spr_Iron_Will2.yy",},"order":2,},
@@ -9,6 +10,7 @@
     {"id":{"name":"spr_VP4","path":"sprites/spr_VP4/spr_VP4.yy",},"order":0,},
     {"id":{"name":"Obj_enemy_yellow","path":"objects/Obj_enemy_yellow/Obj_enemy_yellow.yy",},"order":6,},
     {"id":{"name":"spr_DM3","path":"sprites/spr_DM3/spr_DM3.yy",},"order":2,},
+    {"id":{"name":"spr_skill_window","path":"sprites/spr_skill_window/spr_skill_window.yy",},"order":12,},
     {"id":{"name":"spr_ST2","path":"sprites/spr_ST2/spr_ST2.yy",},"order":2,},
     {"id":{"name":"spr_ST3","path":"sprites/spr_ST3/spr_ST3.yy",},"order":3,},
     {"id":{"name":"Spr_skill3","path":"sprites/Spr_skill3/Spr_skill3.yy",},"order":3,},
@@ -78,7 +80,7 @@
     {"id":{"name":"Spr_bulletbox_black","path":"sprites/Spr_bulletbox_black/Spr_bulletbox_black.yy",},"order":0,},
     {"id":{"name":"spr_apteka","path":"sprites/spr_apteka/spr_apteka.yy",},"order":13,},
     {"id":{"name":"Obj_wall","path":"objects/Obj_wall/Obj_wall.yy",},"order":1,},
-    {"id":{"name":"Spr_skill_window","path":"sprites/Spr_skill_window/Spr_skill_window.yy",},"order":6,},
+    {"id":{"name":"Spr_skill_window1","path":"sprites/Spr_skill_window1/Spr_skill_window1.yy",},"order":6,},
     {"id":{"name":"Obj_enemy_orange","path":"objects/Obj_enemy_orange/Obj_enemy_orange.yy",},"order":5,},
     {"id":{"name":"spr_VP1","path":"sprites/spr_VP1/spr_VP1.yy",},"order":1,},
     {"id":{"name":"spr_RF3","path":"sprites/spr_RF3/spr_RF3.yy",},"order":3,},
@@ -117,7 +119,7 @@
     {"id":{"name":"spr_DM4","path":"sprites/spr_DM4/spr_DM4.yy",},"order":3,},
     {"id":{"name":"DevRoom","path":"rooms/DevRoom/DevRoom.yy",},"order":2,},
     {"id":{"name":"Obj_bullet_yellow","path":"objects/Obj_bullet_yellow/Obj_bullet_yellow.yy",},"order":8,},
-    {"id":{"name":"Spr_shop_window","path":"sprites/Spr_shop_window/Spr_shop_window.yy",},"order":10,},
+    {"id":{"name":"Spr_shop_window1","path":"sprites/Spr_shop_window1/Spr_shop_window1.yy",},"order":10,},
     {"id":{"name":"Obj_enemy_green","path":"objects/Obj_enemy_green/Obj_enemy_green.yy",},"order":2,},
     {"id":{"name":"skillsystem","path":"scripts/skillsystem/skillsystem.yy",},"order":2,},
   ],

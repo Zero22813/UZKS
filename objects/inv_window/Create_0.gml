@@ -9,7 +9,7 @@ sname = "name"
 info = "none"
 
 // Кнопки скиллов
-for ( i = 0; i < array_length(global.items); i++ ){
+for ( i = 0; i < 4; i++ ){
 	array_push(btns, instance_create_depth(200 + 100*i, 300, -2, Inv_btn ))
 	with(btns[i]) {
 		getitemfromid(other.i)
