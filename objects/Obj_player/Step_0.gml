@@ -4,7 +4,11 @@ hspd = ( keyboard_check(ord("D")) - keyboard_check(ord("A")) ) * mspd
 vspd = ( keyboard_check(ord("S")) - keyboard_check(ord("W")) ) * mspd
 
 var door = instance_nearest(x, y, Obj_door)
+
+//----------Столкновения----------
 if door.status == "close"{
+	if door.rt == 0{ if y - door.y <= 92 && y - door.y > 0{ y += 10 } }
+	else{ if x - door.x <= 92 && x - door.x > 0{ x += 10 } }
 	hcol = !place_meeting(x + hspd, y, Obj_wall) * !place_meeting(x + hspd, y, Obj_water) * !place_meeting(x + hspd, y, Obj_door)
 	vcol = !place_meeting(x, y + vspd, Obj_wall) * !place_meeting(x, y + vspd, Obj_water) * !place_meeting(x, y + vspd, Obj_door)
 }
