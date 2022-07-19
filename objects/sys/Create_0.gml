@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// открытое окно интерфейса (0 - если ничего не открыто)
+global.curwin = 0
+
+// иконка курсора
 global.mico = Spr_cursor
 depth = -3
 
+// игровая валюта
 global.souls = 0
 
 // Навыки
@@ -203,14 +208,14 @@ global.items = [
 		0 //qty-4
 	],
 	[//id-2
-		"Морфий", //name-0
+		"Морфий(Comming soon)", //name-0
 		"Постепенно востанавливает\nздоровье.", //desc-1
 		ico_med_64, //ico-2
 		500, //cost-3
 		0 //qty-4
 	],
 	[//id-3
-		"Адреналин", //name-0
+		"Адреналин(Comming soon)", //name-0
 		"Временно уменьшает\nполучаемый урон.", //desc-1
 		ico_med2_64, //ico-2
 		350, //cost-3

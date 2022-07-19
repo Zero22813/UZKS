@@ -4,3 +4,5 @@
 for ( i = 0; i < array_length(btns); i++ ){
 	instance_destroy(btns[i])
 }
+global.mico = Spr_cursor
+global.curwin = 0

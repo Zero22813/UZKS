@@ -24,7 +24,7 @@ if y > room_height - 32 { y = room_height - 32 }
 
 //------------Стрельба------------
 
-if !in_menu{
+if global.curwin == 0{
 	if keyboard_check(ord(1)){ weapon = "rifle" }
 	else if keyboard_check(ord(2)){ weapon = "gun" }
 
@@ -92,31 +92,27 @@ else{
 
 //------------Окно навыков------------
 if keyboard_check_released( ord("C") ){
-	if !in_menu{
-		in_menu = true
-		Skwin = instance_create_depth(0, 0, -1, Skill_window)
+	if global.curwin == 0{
+		global.curwin = instance_create_depth(0, 0, -1, Skill_window)
 	}
 	else{
-		in_menu = false
-		instance_destroy(Skwin)
+		instance_destroy(global.curwin)
 	}
 }
 
 //------------Окно инвентаря------------
 if keyboard_check_released( ord("I") ){
-	if !in_menu{
-		in_menu = true
-		Iwin = instance_create_depth(0, 0, -1, Inv_window)
+	if global.curwin == 0{
+		global.curwin = instance_create_depth(0, 0, -1, Inv_window)
 	}
 	else{
-		in_menu = false
-		instance_destroy(Iwin)
+		instance_destroy(global.curwin)
 	}
 }
 
 //------------Применение предметов------------
 if keyboard_check_released( ord("V") ) && global.items[curitem][4] > 0{
-	if !in_menu{
+	if global.curwin == 0{
 		useitem(curitem)
 	}
 }
