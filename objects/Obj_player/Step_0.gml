@@ -7,8 +7,16 @@ var door = instance_nearest(x, y, Obj_door)
 
 //----------Столкновения----------
 if door.status == "close"{
-	if door.rt == 0{ if y - door.y <= 92 && y - door.y > 0{ y += 10 } }
-	else{ if x - door.x <= 92 && x - door.x > 0{ x += 10 } }
+	if distance_to_object(door) < 100{
+		if door.rt == 0{
+			if y - door.y <= 92 && y - door.y > 20{ y += 10 }
+			else if y - door.y <= 20 && y - door.y > -30{ y -= 10 }
+		}
+		else{
+			if x - door.x <= 92 && x - door.x > 20{ x += 10 }
+			else if x - door.x <= 20 && x - door.x > -30{ x -= 10 }
+		}
+	}
 	hcol = !place_meeting(x + hspd, y, Obj_wall) * !place_meeting(x + hspd, y, Obj_water) * !place_meeting(x + hspd, y, Obj_door)
 	vcol = !place_meeting(x, y + vspd, Obj_wall) * !place_meeting(x, y + vspd, Obj_water) * !place_meeting(x, y + vspd, Obj_door)
 }
