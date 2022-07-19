@@ -7,7 +7,7 @@ var door = instance_nearest(x, y, Obj_door)
 
 //----------Столкновения----------
 if door.status == "close"{
-	if distance_to_object(door) < 70{
+	if distance_to_object(door) < 10{
 		if door.rt == 0{
 			if y - door.y <= 92 && y - door.y > 20{ y += 10 }
 			else if y - door.y <= 20 && y - door.y > -30{ y -= 10 }
