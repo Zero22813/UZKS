@@ -17,6 +17,9 @@ if instance_exists(Obj_player){
 	draw_healthbar(50, 80, 50 + 3 * ma, 100, ( a / ma * 100 ), c_black, c_blue, c_blue, 0, true, true)
 }
 
+draw_set_color(c_red)
+draw_text(50, 120, string(global.debug))
+
 // Души
 draw_set_color(#2C1B31)
 draw_text(1200, 700, global.souls)

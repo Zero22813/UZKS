@@ -3,7 +3,10 @@
 spawn.encount -= 1
 
 if irandom_range(1,4) == 1{
-	instance_create_depth(x, y, 1, Obj_ammo)
+	box = instance_create_depth(x, y, depth, Obj_ammo)
+	with(box){
+		drop = other.drop
+	}
 }
 
 //xpadd(xp)

@@ -105,14 +105,15 @@ function buyitem(itemid){
 				global.items[itemid][4] += 1
 				break
 			case 4:
-				Obj_player.gunAmmo += 7
-				break
-			case 5:
-				Obj_player.rifAmmo += 30
-				break
-			case 6:
 				Obj_player.armor = Obj_player.maxarmor
 				break
+			case 5:
+				Obj_player.ammo[0][0] += 30
+				break
+			case 6:
+				Obj_player.ammo[1][0] += 7
+				break
+			
 		}
 		
 	}

@@ -7,3 +7,4 @@ spd = 2
 dmg = 20
 spawn = 0
 souls = 1500
+drop = 6

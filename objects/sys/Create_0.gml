@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.debug = false
+global.debug = true
 
 // открытое окно интерфейса (0 - если ничего не открыто)
 global.curwin = 0
@@ -11,7 +11,7 @@ global.mico = Spr_cursor
 depth = -3
 
 // игровая валюта
-global.souls = 0
+global.souls = 10000
 
 // Навыки
 #region skills
@@ -224,10 +224,10 @@ global.items = [
 		0 //qty-4
 	],
 	[//id-4
-		"Патроны для пистолета", //name-0
-		"Дополнительные патроны.", //desc-1
-		ico_ammo_64, //ico-2
-		100, //cost-3
+		"Ремонт брони", //name-0
+		".", //desc-1
+		ico_armor_64, //ico-2
+		500, //cost-3
 		0 //qty-4
 	],
 	[//id-5
@@ -237,11 +237,11 @@ global.items = [
 		250, //cost-3
 		0 //qty-4
 	],
-	[//id-6
-		"Ремонт брони", //name-0
-		".", //desc-1
-		ico_armor_64, //ico-2
-		500, //cost-3
+		[//id-6
+		"Патроны для пистолета", //name-0
+		"Дополнительные патроны.", //desc-1
+		ico_ammo_64, //ico-2
+		100, //cost-3
 		0 //qty-4
 	],
 	
