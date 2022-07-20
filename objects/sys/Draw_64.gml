@@ -36,7 +36,9 @@ if instance_exists(Obj_player){
 	Spr_bulletbox_red,
 	Spr_bulletbox_yellow
 	]
-	
+	var ammo = Obj_player.ammo
+	var inLoad = Obj_player.inLoad
+	var weapon = Obj_player.weapon
 	var curblt = Obj_player.curblt
 	
 	if curblt == 0{
@@ -73,7 +75,7 @@ if instance_exists(Obj_player){
 	
 	draw_sprite(its[curitem], 0, 50, 720)
 	
-	if curitem == 3{
+	if curitem == array_length(its){
 		draw_sprite(its[0], 0, 80, 730)
 	}
 	else{
@@ -83,13 +85,13 @@ if instance_exists(Obj_player){
 	// Иконка оружия и кол-во патрон
 	draw_set_color(#8E9B97)
 	switch Obj_player.weapon{
-		case "rifle":
+		case 0:
 			draw_sprite(ico_rifle_64, 0, 130, 720)
-			draw_text(160, 710, string(Obj_player.rifInLoad) + "|" + string(Obj_player.rifAmmo) )
+			draw_text(160, 710, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
 			break
-		case "gun":
+		case 1:
 			draw_sprite(ico_gun_64, 0, 130, 720)
-			draw_text(160, 710, string(Obj_player.gunInLoad) + "|" + string(Obj_player.gunAmmo) )
+			draw_text(160, 710, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
 			break
 	}
 }

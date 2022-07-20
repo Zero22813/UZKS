@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.debug = false
+
 // открытое окно интерфейса (0 - если ничего не открыто)
 global.curwin = 0
 

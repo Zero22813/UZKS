@@ -37,17 +37,17 @@ if y > room_height - 32 { y = room_height - 32 }
 //------------Стрельба------------
 
 if global.curwin == 0{
-	if keyboard_check(ord(1)){ weapon = "rifle" }
-	else if keyboard_check(ord(2)){ weapon = "gun" }
+	if keyboard_check(ord(1)){ weapon = 0 }
+	else if keyboard_check(ord(2)){ weapon = 1 }
 
-	if ( weapon = "rifle" && mouse_check_button(mb_left) && rifInLoad > 0 && atkcount >= atkspd){
+	if ( weapon = 0 && mouse_check_button(mb_left) && inLoad[weapon][curblt] > 0 && atkcount >= atkspd){
 		instance_create_depth(x, y, -1000, blts[curblt])
-		rifInLoad -= 1
+		inLoad[weapon][curblt] -= 1
 		atkcount = 0
 	}
-	else if ( weapon = "gun" && mouse_check_button_released(mb_left) && gunInLoad > 0){
+	else if ( weapon = 1 && mouse_check_button_released(mb_left) && inLoad[weapon][curblt] > 0){
 		instance_create_depth(x, y, -1000, blts[curblt])
-		gunInLoad -= 1
+		inLoad[weapon][curblt] -= 1
 	}
 }
 
@@ -55,28 +55,39 @@ if global.curwin == 0{
 //------------Перезарядка------------
 
 if keyboard_check_released(ord("R")){
+	tmp = (cup[weapon] - inLoad[weapon][curblt])
+	if ammo[weapon][curblt] >= tmp {
+		ammo[weapon][curblt] -= tmp
+		inLoad[weapon][curblt] = cup[weapon]
+	}
+	else{
+		inLoad[weapon][curblt] += ammo[weapon][curblt]
+		ammo[weapon][curblt] = 0
+	}
+	/*
 	switch weapon{
-		case "rifle":
-			tmp = (30 - rifInLoad)
-			if rifAmmo >= tmp {
-				rifAmmo -= tmp
-				rifInLoad = 30
+		case 0:
+			tmp = (30 - inLoad[weapon][curblt])
+			if ammo[weapon][curblt] >= tmp {
+				ammo[weapon][curblt] -= tmp
+				inLoad[weapon][curblt] = 30
 			}
 			else{
-				rifInLoad += rifAmmo
-				rifAmmo = 0
+				inLoad[weapon][curblt] += ammo[weapon][curblt]
+				ammo[weapon][curblt] = 0
 			}
-		case "gun":
-			tmp = (7 - gunInLoad)
-			if gunAmmo >= tmp {
-				gunAmmo -= tmp
-				gunInLoad = 7
+		case 1:
+			tmp = (7 - inLoad[weapon][curblt])
+			if ammo[weapon][curblt] >= tmp {
+				ammo[weapon][curblt] -= tmp
+				inLoad[weapon][curblt] = 7
 			}
 			else{
-				gunInLoad += gunAmmo
-				gunAmmo = 0
+				inLoad[weapon][curblt] += ammo[weapon][curblt]
+				ammo[weapon][curblt] = 0
 			}
 	}
+	*/
 }
 
 if keyboard_check( vk_shift ){

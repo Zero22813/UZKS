@@ -11,4 +11,6 @@ Obj_enemy_yellow
 ]
 
 encount = 0
-alarm[0] = irandom_range(60, 600)
+if !global.debug{
+	alarm[0] = irandom_range(60, 600)
+}
