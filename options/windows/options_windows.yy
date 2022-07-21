@@ -1,7 +1,7 @@
 {
   "option_windows_display_name": "UZKS",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "1.0.0.1",
+  "option_windows_version": "1.0.0.2",
   "option_windows_company_info": "HZPB",
   "option_windows_product_info": "Ultimate Zombie Killer Simulator",
   "option_windows_copyright_info": "HZPB",
