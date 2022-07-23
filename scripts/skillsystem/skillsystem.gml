@@ -105,7 +105,7 @@ function buyitem(itemid){
 				global.items[itemid][4] += 1
 				break
 			case 4:
-				Obj_player.armor = Obj_player.maxarmor
+				if Obj_player.armor < Obj_player.maxarmor{ Obj_player.armor = Obj_player.maxarmor }
 				break
 			case 5:
 				Obj_player.ammo[0][0] += 30
@@ -156,7 +156,7 @@ function useitem(itemid){
 
 #region Получение навыка\предмета по его ИД
 function getskillfromid(skillid){
-	self.skillid = skillid
+	self.sid = skillid
 	name = global.skills[skillid][0]
 	desc = global.skills[skillid][1]
 	sprite_index = global.skills[skillid][2]
@@ -165,7 +165,7 @@ function getskillfromid(skillid){
 }
 
 function getitemfromid(itemid){
-	self.itemid = itemid
+	self.sid = itemid
 	name = global.items[itemid][0]
 	desc = global.items[itemid][1]
 	sprite_index = global.items[itemid][2]

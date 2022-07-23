@@ -1,17 +1,11 @@
 {
-  "spriteId": {
-    "name": "spr_skill_window",
-    "path": "sprites/spr_skill_window/spr_skill_window.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Ex_win_btn",
-    "path": "objects/Ex_win_btn/Ex_win_btn.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -26,6 +20,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":72,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -34,7 +29,7 @@
     "path": "folders/Objects/system.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Inv_window",
+  "name": "Ex_btn",
   "tags": [],
   "resourceType": "GMObject",
 }

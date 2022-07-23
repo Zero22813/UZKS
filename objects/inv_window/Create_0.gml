@@ -1,19 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+qty = array_length(global.items) - 3
+obj = Inv_btn
+type = "item"
 
-btns = []
-depth = -1
-
-sname = "name"
-info = "none"
-
-// Кнопки скиллов
-for ( i = 0; i < 4; i++ ){
-	array_push(btns, instance_create_depth(200 + 100*i, 300, -2, Inv_btn ))
-	with(btns[i]) {
-		getitemfromid(other.i)
-		xdif = 180 + 100 * (other.i % 8)
-		ydif = 220 + 100 * int64(other.i / 8)
-	}
-}
+// Inherit the parent event
+event_inherited();

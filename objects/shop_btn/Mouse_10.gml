@@ -2,10 +2,10 @@
 
 Shop_window.sname = name
 
-switch(itemid){
+switch(sid){
 	default:
 		Shop_window.info = desc +
-		"\n\nВ инвентаре: " + string( global.items[itemid][4] ) +
+		"\n\nВ инвентаре: " + string( global.items[sid][4] ) +
 		"\n\nСтоимость: " + string(cost)
 		break
 	case 4:

@@ -1,10 +1,6 @@
-/// @description 
+/// @description Insert description here
+// You can write your code in this editor
 
-xdif = 0
-ydif = 0
 
-itemid = 0
-name = ""
-desc = ""
-sprite_index = Spr_skill1
-cost = 0
+// Inherit the parent event
+event_inherited();

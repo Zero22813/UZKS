@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Режим дебага
 global.debug = true
 
 // открытое окно интерфейса (0 - если ничего не открыто)
