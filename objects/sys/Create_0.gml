@@ -8,7 +8,7 @@ global.debug = true
 global.curwin = 0
 
 // иконка курсора
-global.mico = Spr_cursor
+global.mico = Spr_cursor_en
 depth = -3
 
 // игровая валюта
