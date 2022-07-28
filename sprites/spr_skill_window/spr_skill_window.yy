@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "win-bg",
+    "path": "folders/Sprites/UI/win-bg.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_skill_window",

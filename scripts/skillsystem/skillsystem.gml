@@ -149,6 +149,15 @@ function useitem(itemid){
 			case 1:
 				instance_create_depth(x, y, -1000, Obj_grenade)
 				break
+			case 2:
+				alarm[0] = 15
+				heal = 10
+				break
+			case 3:
+				def += 10
+				alarm[1] = 300
+				break
+				
 		}
 	}
 }

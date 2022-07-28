@@ -1,17 +1,17 @@
 /// @description дамаг
 // You can write your code in this editor
 
-if !in_dmg {
+if !in_dmg and exdmg < def{
 	if armor >= exdmg{
-		armor -= exdmg
+		armor -= exdmg - def
 	}
 	else if armor > 0{
-		armor -= exdmg
+		armor -= exdmg - def
 		hp -= armor
 		armor = 0
 	}
 	else{
-		hp -= exdmg
+		hp -= exdmg - def
 	}
 	
 	in_dmg = true

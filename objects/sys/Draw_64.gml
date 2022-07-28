@@ -27,7 +27,7 @@ draw_text(1200, 700, global.souls)
 // Оружие и предметы
 if instance_exists(Obj_player){
 	draw_set_color(#537072)
-	draw_rectangle(0, 768, 210, 670, false)
+	draw_rectangle(0, 768, 260, 670, false)
 	
 	// Патроны
 	blts = [
@@ -78,7 +78,7 @@ if instance_exists(Obj_player){
 	
 	draw_sprite(its[curitem], 0, 50, 720)
 	
-	if curitem == array_length(its){
+	if curitem == array_length(its) - 1{
 		draw_sprite(its[0], 0, 80, 730)
 	}
 	else{

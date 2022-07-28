@@ -8,7 +8,7 @@ global.debug = true
 global.curwin = 0
 
 // иконка курсора
-global.mico = Spr_cursor_en
+global.mico = Spr_cursor
 depth = -3
 
 // игровая валюта
@@ -211,14 +211,14 @@ global.items = [
 		0 //qty-4
 	],
 	[//id-2
-		"Морфий(Comming soon)", //name-0
+		"Морфий", //name-0
 		"Постепенно востанавливает\nздоровье.", //desc-1
 		ico_med_64, //ico-2
 		500, //cost-3
 		0 //qty-4
 	],
 	[//id-3
-		"Адреналин(Comming soon)", //name-0
+		"Адреналин", //name-0
 		"Временно уменьшает\nполучаемый урон.", //desc-1
 		ico_med2_64, //ico-2
 		350, //cost-3
@@ -226,7 +226,7 @@ global.items = [
 	],
 	[//id-4
 		"Ремонт брони", //name-0
-		".", //desc-1
+		"Восстановить броню\nдо 100%", //desc-1
 		ico_armor_64, //ico-2
 		500, //cost-3
 		0 //qty-4

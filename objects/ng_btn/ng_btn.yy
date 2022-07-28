@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "main-menu",
-    "path": "folders/Objects/main-menu.yy",
+    "name": "mm-btn",
+    "path": "folders/Objects/system/mm-btn.yy",
   },
   "resourceVersion": "1.0",
   "name": "ng_btn",

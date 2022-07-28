@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "main-menu",
-    "path": "folders/Objects/main-menu.yy",
+    "name": "win-btn",
+    "path": "folders/Objects/system/win-btn.yy",
   },
   "resourceVersion": "1.0",
   "name": "exit_btn",

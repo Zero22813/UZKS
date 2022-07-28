@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "system",
-    "path": "folders/Objects/system.yy",
+    "name": "win-btn",
+    "path": "folders/Objects/system/win-btn.yy",
   },
   "resourceVersion": "1.0",
   "name": "Skill_btn",
