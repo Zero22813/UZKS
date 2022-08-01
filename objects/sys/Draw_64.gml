@@ -22,12 +22,12 @@ draw_text(50, 120, string(global.debug))
 
 // Души
 draw_set_color(#2C1B31)
-draw_text(1200, 700, global.souls)
+draw_text(global.CameraWidth - 166, global.CameraHeight - 68, global.souls)
 
 // Оружие и предметы
 if instance_exists(Obj_player){
 	draw_set_color(#537072)
-	draw_rectangle(0, 768, 260, 670, false)
+	draw_rectangle(0, global.CameraHeight, 260, global.CameraHeight - 98 , false)
 	
 	// Патроны
 	blts = [
@@ -45,19 +45,19 @@ if instance_exists(Obj_player){
 	var curblt = Obj_player.curblt
 	
 	if curblt == 0{
-		draw_sprite(blts[6], 0, 20, 700)
+		draw_sprite(blts[6], 0, 20, global.CameraHeight - 68)
 	}
 	else{
-		draw_sprite(blts[curblt-1], 0, 20, 700)
+		draw_sprite(blts[curblt-1], 0, 20, global.CameraHeight - 68)
 	}
 	
-	draw_sprite(blts[curblt], 0, 50, 690)
+	draw_sprite(blts[curblt], 0, 50, global.CameraHeight - 78)
 	
 	if curblt == 6{
-		draw_sprite(blts[0], 0, 80, 700)
+		draw_sprite(blts[0], 0, 80, global.CameraHeight - 68)
 	}
 	else{
-		draw_sprite(blts[curblt+1], 0, 80, 700)
+		draw_sprite(blts[curblt+1], 0, 80, global.CameraHeight - 68)
 	}
 	
 	//Предметы
@@ -70,31 +70,31 @@ if instance_exists(Obj_player){
 	
 	var curitem = Obj_player.curitem
 	if curitem == 0{
-		draw_sprite(its[3], 0, 20, 730)
+		draw_sprite(its[3], 0, 20, global.CameraHeight - 38)
 	}
 	else{
-		draw_sprite(its[curitem-1], 0, 20, 730)
+		draw_sprite(its[curitem-1], 0, 20, global.CameraHeight - 38)
 	}
 	
-	draw_sprite(its[curitem], 0, 50, 720)
+	draw_sprite(its[curitem], 0, 50, global.CameraHeight - 48)
 	
 	if curitem == array_length(its) - 1{
-		draw_sprite(its[0], 0, 80, 730)
+		draw_sprite(its[0], 0, 80, global.CameraHeight - 38)
 	}
 	else{
-		draw_sprite(its[curitem+1], 0, 80, 730)
+		draw_sprite(its[curitem+1], 0, 80, global.CameraHeight - 38)
 	}
 	
 	// Иконка оружия и кол-во патрон
 	draw_set_color(#8E9B97)
 	switch Obj_player.weapon{
 		case 0:
-			draw_sprite(ico_rifle_64, 0, 130, 720)
-			draw_text(160, 710, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
+			draw_sprite(ico_rifle_64, 0, 130, global.CameraHeight - 48)
+			draw_text(160, global.CameraHeight - 58, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
 			break
 		case 1:
-			draw_sprite(ico_gun_64, 0, 130, 720)
-			draw_text(160, 710, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
+			draw_sprite(ico_gun_64, 0, 130, global.CameraHeight - 48)
+			draw_text(160, global.CameraHeight - 58, string(inLoad[weapon][curblt]) + "|" + string(ammo[weapon][curblt]) )
 			break
 	}
 }

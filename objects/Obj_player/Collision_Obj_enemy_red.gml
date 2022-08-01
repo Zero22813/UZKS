@@ -1,10 +1,14 @@
 /// @description дамаг
 // You can write your code in this editor
 
-if !in_dmg and other.dmg < def{
-	if armor >= other.dmg{
-		armor -= other.dmg - def
-	}
+if other.dmg > def{
+	
+	
+	
+	if !in_dmg{
+		if armor >= other.dmg{
+			armor -= other.dmg - def
+		}
 	else if armor > 0{
 		armor -= other.dmg - def
 		hp -= armor
@@ -16,4 +20,8 @@ if !in_dmg and other.dmg < def{
 	
 	in_dmg = true
 	sprite_index = Spr_player_damaged
+	}
+	
+	
+	
 }

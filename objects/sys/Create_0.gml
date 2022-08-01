@@ -1,6 +1,38 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Камера
+#region camera
+
+// Разрешённые размеры экрана.
+global.CameraSizes = [
+	[1366, 768],
+	[1920, 1080]
+	] 
+// Переменная, которая будет отображать, какой из массивов мы используем
+global.CameraNum = array_length(global.CameraSizes) - 1 
+
+global.CameraWidth = global.CameraSizes[global.CameraNum][0] // Ширина камеры.
+global.CameraHeight = global.CameraSizes[global.CameraNum][1] // Высота камеры.
+
+#macro CameraScale 2 // Масштаб камеры. Константа.
+#macro CameraSpeed 1 // Скорость камеры. Константа.
+
+var windowWidth = global.CameraWidth// * CameraScale // Ширина окна = ширина камеры * масштаб
+var windowHeight = global.CameraHeight// * CameraScale // Высота окна = высота камеры * масштаб
+
+surface_resize(application_surface, windowWidth, windowHeight); // Переопределяем "поверхность", чтобы соотношение сторон спрайтов соответствовало нашему экрану.
+
+window_set_size(windowWidth, windowHeight); // Устанавливаем размер окна (Необязательно, но желательно)
+window_set_position(
+display_get_width() / 2 - windowWidth / 2,
+display_get_height() / 2 - windowHeight / 2
+); // Располагаем наше окно по центру дисплея
+
+instance_create_depth(x,y,depth, Cam)
+
+#endregion
+
 // Режим дебага
 global.debug = true
 
@@ -194,6 +226,7 @@ global.skills = [
 ]
 #endregion
 
+// Предметы
 #region items
 global.items = [
 	[//id-0

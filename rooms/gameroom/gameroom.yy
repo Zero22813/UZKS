@@ -14,7 +14,7 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"sys","path":"objects/sys/sys.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_0_1_1_1","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"sys","path":"objects/sys/sys.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_6E253FEA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":-1,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Inst_Sys","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"Tile_outside","path":"tilesets/Tile_outside/Tile_outside.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":100,"SerialiseHeight":68,"TileSerialiseData":[
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -1059,7 +1059,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_0_1_1_1","path":"rooms/GameRoom/GameRoom.yy",},
     {"name":"inst_6D75BC96","path":"rooms/GameRoom/GameRoom.yy",},
     {"name":"inst_7C94AAC7","path":"rooms/GameRoom/GameRoom.yy",},
     {"name":"inst_6A2D1FF7","path":"rooms/GameRoom/GameRoom.yy",},
@@ -1611,6 +1610,7 @@
     {"name":"inst_5414FAA","path":"rooms/GameRoom/GameRoom.yy",},
     {"name":"inst_61099865","path":"rooms/GameRoom/GameRoom.yy",},
     {"name":"inst_2D307FD9","path":"rooms/GameRoom/GameRoom.yy",},
+    {"name":"inst_6E253FEA","path":"rooms/GameRoom/GameRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -1623,7 +1623,7 @@
   "viewSettings": {
     "inheritViewSettings": false,
     "enableViews": true,
-    "clearViewBackground": false,
+    "clearViewBackground": true,
     "clearDisplayBuffer": true,
   },
   "physicsSettings": {

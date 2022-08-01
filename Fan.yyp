@@ -53,6 +53,7 @@
     {"id":{"name":"Obj_explosion","path":"objects/Obj_explosion/Obj_explosion.yy",},"order":4,},
     {"id":{"name":"Spr_loot","path":"sprites/Spr_loot/Spr_loot.yy",},"order":2,},
     {"id":{"name":"ico_grenade_64","path":"sprites/ico_grenade_64/ico_grenade_64.yy",},"order":8,},
+    {"id":{"name":"Cam","path":"objects/Cam/Cam.yy",},"order":14,},
     {"id":{"name":"Obj_enemy_red","path":"objects/Obj_enemy_red/Obj_enemy_red.yy",},"order":0,},
     {"id":{"name":"Spawner","path":"objects/Spawner/Spawner.yy",},"order":2,},
     {"id":{"name":"Spr_tile_Outside","path":"sprites/Spr_tile_Outside/Spr_tile_Outside.yy",},"order":3,},
