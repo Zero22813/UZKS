@@ -144,7 +144,6 @@
     {"id":{"name":"ico_apteka_64","path":"sprites/ico_apteka_64/ico_apteka_64.yy",},"order":1,},
     {"id":{"name":"ico_armor_64","path":"sprites/ico_armor_64/ico_armor_64.yy",},"order":2,},
     {"id":{"name":"exit_btn","path":"objects/exit_btn/exit_btn.yy",},"order":0,},
-    {"id":{"name":"Sprite101","path":"sprites/Sprite101/Sprite101.yy",},"order":8,},
     {"id":{"name":"Tile_floor","path":"tilesets/Tile_floor/Tile_floor.yy",},"order":1,},
     {"id":{"name":"Spr_bulletbox_yellow","path":"sprites/Spr_bulletbox_yellow/Spr_bulletbox_yellow.yy",},"order":4,},
     {"id":{"name":"spr_DM4","path":"sprites/spr_DM4/spr_DM4.yy",},"order":3,},
