@@ -7,7 +7,7 @@
   "option_windows_copyright_info": "HZPB",
   "option_windows_description_info": "Ultimate Zombie Killer Simulator",
   "option_windows_display_cursor": false,
-  "option_windows_icon": "icons/icon.ico",
+  "option_windows_icon": "${base_options_dir}/windows/icons/icon.ico",
   "option_windows_save_location": 0,
   "option_windows_splash_screen": "${base_options_dir}/windows/splash/splash.png",
   "option_windows_use_splash": false,
