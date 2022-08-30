@@ -22,7 +22,6 @@
     {"id":{"name":"Spr_heart_32","path":"sprites/Spr_heart_32/Spr_heart_32.yy",},"order":2,},
     {"id":{"name":"spr_RF4","path":"sprites/spr_RF4/spr_RF4.yy",},"order":0,},
     {"id":{"name":"Skill_btn","path":"objects/Skill_btn/Skill_btn.yy",},"order":3,},
-    {"id":{"name":"Spr_isometric_ground_block","path":"sprites/Spr_isometric_ground_block/Spr_isometric_ground_block.yy",},"order":0,},
     {"id":{"name":"Spr_enemy_yellow","path":"sprites/Spr_enemy_yellow/Spr_enemy_yellow.yy",},"order":1,},
     {"id":{"name":"Death_window","path":"objects/Death_window/Death_window.yy",},"order":5,},
     {"id":{"name":"ng_btn","path":"objects/ng_btn/ng_btn.yy",},"order":1,},
@@ -225,8 +224,8 @@
     {"folderPath":"folders/Sprites/UI/mm-bg.yy","order":6,"resourceVersion":"1.0","name":"mm-bg","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/system/win.yy","order":12,"resourceVersion":"1.0","name":"win","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/system/mm-btn.yy","order":13,"resourceVersion":"1.0","name":"mm-btn","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/test/map_block.yy","order":0,"resourceVersion":"1.0","name":"map_block","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/test.yy","order":9,"resourceVersion":"1.0","name":"test","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/test_isometric_room/map_block.yy","order":0,"resourceVersion":"1.0","name":"map_block","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/test_isometric_room.yy","order":9,"resourceVersion":"1.0","name":"test_isometric_room","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
