@@ -12,7 +12,6 @@
     {"id":{"name":"Obj_enemy_yellow","path":"objects/Obj_enemy_yellow/Obj_enemy_yellow.yy",},"order":6,},
     {"id":{"name":"spr_DM3","path":"sprites/spr_DM3/spr_DM3.yy",},"order":2,},
     {"id":{"name":"spr_skill_window","path":"sprites/spr_skill_window/spr_skill_window.yy",},"order":3,},
-    {"id":{"name":"SprABOBA","path":"sprites/SprABOBA/SprABOBA.yy",},"order":10,},
     {"id":{"name":"spr_ST2","path":"sprites/spr_ST2/spr_ST2.yy",},"order":2,},
     {"id":{"name":"spr_ST3","path":"sprites/spr_ST3/spr_ST3.yy",},"order":3,},
     {"id":{"name":"Spr_skill3","path":"sprites/Spr_skill3/Spr_skill3.yy",},"order":3,},
